@@ -14,6 +14,17 @@ return new class extends Migration
     public function up()
     {
         //
+
+        Schema::create('tb_suplier', function (Blueprint $table) {
+            $table->id();
+            $table->string('nama_suplier');
+           
+            
+          
+            $table->rememberToken();
+            $table->timestamps();
+        });
+        
     }
 
     /**

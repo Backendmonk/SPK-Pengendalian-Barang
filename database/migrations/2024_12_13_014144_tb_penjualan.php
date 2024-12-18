@@ -14,6 +14,18 @@ return new class extends Migration
     public function up()
     {
         //
+        Schema::create('tb_penjualan', function (Blueprint $table) {
+            $table->id();
+            $table->bigInteger('id_barang');
+            $table->string('nama_barang');
+            $table->string('harga_barang');
+            $table->string('qty');
+            $table->string('total_bayar');
+            
+          
+            $table->rememberToken();
+            $table->timestamps();
+        });
     }
 
     /**

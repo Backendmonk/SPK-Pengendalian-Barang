@@ -14,6 +14,19 @@ return new class extends Migration
     public function up()
     {
         //
+        Schema::create('tb_pembelian', function (Blueprint $table) {
+            $table->id();
+            $table->bigInteger('id_suplier');
+            $table->string('id_barang');
+            $table->string('nama_barang');
+            $table->string('hargabeli');
+            $table->string('qty');
+            $table->string('total');
+            
+          
+            $table->rememberToken();
+            $table->timestamps();
+        });
     }
 
     /**
