@@ -65,4 +65,12 @@ class ControllerUser extends Controller
                     return redirect()->route('akunview')->with('pesanSalah','');
                 }
     }
+
+
+
+    public function logout(){
+
+       Auth::logout();
+       return redirect()->route('login');
+    }
 }

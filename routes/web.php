@@ -25,13 +25,19 @@ Route::controller(ControllerUser::class)->middleware('guest')->group(function(){
                 return view('login');
             })->name('login');
 
-            
+
         route::get('/registerakun','registerAkunView')->name('akunview');
         route::post('/login','loginAkun');
 
         route::post('/registerAkunBaru','RegisterAkunBaru');
 
 
+});
+
+
+route::controller(ControllerUser::class)->middleware('auth')->group(function(){
+
+            route::get('/logout','logout');
 });
 
 route::controller(ControllerBarang::class)->middleware('auth')->group(function(){
