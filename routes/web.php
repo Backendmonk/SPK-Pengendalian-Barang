@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ControllerBarang;
+use App\Http\Controllers\ControllerSuplier;
 use App\Http\Controllers\ControllerUser;
 use Illuminate\Routing\Controllers\Middleware;
 use Illuminate\Support\Facades\Auth;
@@ -44,6 +45,7 @@ route::controller(ControllerBarang::class)->middleware('auth')->group(function()
         //menus
         route::get('/index','IndexBarang');
         route::get('/DataBarang','DataBarang')->name('databarang');
+       
 
         //view
         route::post('/inputBarangView','inputBarangView')->name('inputbarang');
@@ -56,7 +58,19 @@ route::controller(ControllerBarang::class)->middleware('auth')->group(function()
 
         route::post('/UpdateBarang','UpdateBarang');
         route::post('/hapusBarang','hapusBarang');
-        
+});
+
+route::controller(ControllerSuplier::class)->middleware('auth')->group(function(){
+
+    //views
+    route::get('/DataSuplier','DataSuplier')->name('datasuplier');
+    route::post('/inputSupView','inputSupView');
+
+
+    //Databases
+    route::post('/SuplierAdd','SuplierAdd');
+
+    
 
 });
 

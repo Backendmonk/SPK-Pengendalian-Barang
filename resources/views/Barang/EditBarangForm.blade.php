@@ -24,14 +24,14 @@
 
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Nama Barang</label>
-        <input type="text" name = "namabarang" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{  $databarang->nama_barang }}">
+        <input type="text" required name = "namabarang" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{  $databarang->nama_barang }}">
         
       </div>
 
 
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Harga Beli Barang</label>
-        <input type="text" name ="hargabeli" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{  $databarang->harga_beli }}">
+        <input type="text" required name ="hargabeli" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{  $databarang->harga_beli }}">
         <small>Harga Beli Akan mempengaruhi harga Beli produk selanjutnya</small>
         
       </div>
@@ -39,20 +39,20 @@
 
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Harga Jual</label>
-        <input type="text" name = "hargajual" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{  $databarang->harga_jual }}">
+        <input type="text" required name = "hargajual" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{  $databarang->harga_jual }}">
         <small>Harga Jual Akan mempengaruhi harga Jual produk selanjutnya</small>
         
       </div>
 
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Qty Awal</label>
-        <input type="text" name = "qty" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"value="{{  $databarang->Kode_barang }}" readonly>
+        <input type="text" required name = "qty" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"value="{{  $databarang->Kode_barang }}" readonly>
         <small>Qty tidak bisa diubah manual</small>
         
       </div>
     
     <button type="submit" class="btn btn-primary">Submit</button>
-    
+
   </form>
 
 @endsection

@@ -35,7 +35,7 @@
                 <a class="collapse-item" href="buttons.html">Pembelian Barang</a>
                 <a class="collapse-item" href="/DataBarang">Barang</a>
                 <a class="collapse-item" href="cards.html">Penjualan</a>
-                <a class="collapse-item" href="cards.html">Suplier</a>
+                <a class="collapse-item" href="/DataSuplier">Suplier</a>
 
             </div>
         </div>
