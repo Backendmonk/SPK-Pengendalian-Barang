@@ -39,6 +39,14 @@
     <script src="{{ asset('/') }}AdminAsset/js/demo/chart-area-demo.js"></script>
     <script src="{{ asset('/') }}AdminAsset/js/demo/chart-pie-demo.js"></script>
 
+
+    <!-- Page level plugins -->
+    <script src="{{ asset('/') }}AdminAsset/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="{{ asset('/') }}AdminAsset/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="{{ asset('/') }}AdminAsset/js/demo/datatables-demo.js"></script>
+
 </body>
 
 </html>

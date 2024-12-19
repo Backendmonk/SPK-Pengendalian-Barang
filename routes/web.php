@@ -41,8 +41,23 @@ route::controller(ControllerUser::class)->middleware('auth')->group(function(){
 });
 
 route::controller(ControllerBarang::class)->middleware('auth')->group(function(){
-
+        //menus
         route::get('/index','IndexBarang');
+        route::get('/DataBarang','DataBarang')->name('databarang');
+
+        //view
+        route::post('/inputBarangView','inputBarangView')->name('inputbarang');
+        route::post('/editBarang','editBarang');
+
+
+        // Push Table
+
+        route::post('/BarangAdd','BarangAdd');
+
+        route::post('/UpdateBarang','UpdateBarang');
+        route::post('/hapusBarang','hapusBarang');
+        
+
 });
 
 
