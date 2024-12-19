@@ -65,10 +65,13 @@ route::controller(ControllerSuplier::class)->middleware('auth')->group(function(
     //views
     route::get('/DataSuplier','DataSuplier')->name('datasuplier');
     route::post('/inputSupView','inputSupView');
-
+    route::post('/editsup','editsup');
 
     //Databases
     route::post('/SuplierAdd','SuplierAdd');
+    route::post('/SuplierUpdate','SuplierUpdate');
+    route::post('/hapussup','hapussup');
+
 
     
 

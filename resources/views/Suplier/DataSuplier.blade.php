@@ -86,14 +86,14 @@
                             
                             <td>
 
-                                    <form action="/editBarang" method="POST">
+                                    <form action="/editsup" method="POST">
                                         @csrf
                                         <input type="text" name = "id" value = "{{ $data->id }}" hidden>
                                             <button type="submit" class="btn btn-primary"><i class="fa fa-cogs"></i></button>    
                                     </form>
                                    
                             </td>
-                            <td> <form action="/hapusBarang" method="POST">
+                            <td> <form action="/hapussup" method="POST">
                                 @csrf
                                 <input type="text" name = "id" value = "{{ $data->id }}" hidden>
                                     <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i></button>    
