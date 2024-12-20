@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ControllerBarang;
 use App\Http\Controllers\ControllerPembelian;
+use App\Http\Controllers\ControllerPenjualan;
 use App\Http\Controllers\ControllerSuplier;
 use App\Http\Controllers\ControllerUser;
 use Illuminate\Routing\Controllers\Middleware;
@@ -92,6 +93,12 @@ route::controller(ControllerPembelian::class)->middleware('auth')->group(functio
 
           
             
+});
+
+
+route::controller(ControllerPenjualan::class)->middleware('auth')->group(function(){
+
+    route::get('/DataPenjualanBarang','DataPenjualanBarang');
 });
 
 

@@ -59,11 +59,11 @@
 @endif
 
     <br>
-    <center><h1>Data Pembelian</h1>
+    <center><h1>Data Penjualan</h1>
     
-            <form action="/inputPembelianView" method="POST">
+            <form action="/inputPenjualanView" method="POST">
                 @csrf
-                        <button type ="submit" class = "btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Tambah Pembelian</button>
+                        <button type ="submit" class = "btn btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Tambah Penjualan</button>
                 </form>
     </center>
 
@@ -72,7 +72,7 @@
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Tabel Barang</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Tabel Data Penjualan</h6>
     </div>
     <div class="card-body">
         <div class="table-responsive">
@@ -80,10 +80,9 @@
                 <thead>
                     <tr>
                         <th>Id Penjualan</th>
-                        <th>Nama Suplier</th>
-                        <th>Nama Barang</th>
-                        <th>Harga Beli</th>
-                        <th>Stok Dibeli</th>
+                        <th>Nama barang</th>
+                        <th>Harga Barang</th>
+                        <th>Qty Jual</th>
                         <th>Total</th>
                         {{-- <th colspan="2">Tools</th> --}}
                         
@@ -95,14 +94,13 @@
                 
                 <tbody>
 
-                    @foreach ($DataPembelian as $data)
+                    @foreach ($DataPenjualan as $data)
                     <tr>
                             <td>{{ $data->id }}</td>
-                            <td>{{ $data->nama_suplier}}</td>
-                            <td>{{ $data->nama_barang }}</td>
-                            <td>{{ $data->hargabeli}}</td>
+                            <td>{{ $data->nama_barang}}</td>
+                            <td>{{ $data->harga_barang }}</td>
                             <td>{{ $data->qty }}</td>
-                            <td>{{ $data->total }}</td>
+                            <td>{{ $data->total_bayar }}</td>
                             {{-- <td>
 
                                     <form action="/editBarang" method="POST">

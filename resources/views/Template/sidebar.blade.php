@@ -34,7 +34,7 @@
                 <h6 class="collapse-header">Kelola Barang:</h6>
                 <a class="collapse-item" href="/DataPermbelianBarang">Pembelian Barang</a>
                 <a class="collapse-item" href="/DataBarang">Barang</a>
-                <a class="collapse-item" href="cards.html">Penjualan</a>
+                <a class="collapse-item" href="/DataPenjualanBarang">Penjualan</a>
                 <a class="collapse-item" href="/DataSuplier">Suplier</a>
 
             </div>
