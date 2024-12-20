@@ -12,7 +12,7 @@ class ModelPembelian extends Model
 
     protected $primaryKey = 'id';
 
-    public $timestamps = false;
+    public $timestamps = true;
 
     public $incrementing = true;
 }
