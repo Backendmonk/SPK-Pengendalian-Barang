@@ -346,8 +346,8 @@ class ComposerStaticInit65e85f9f959c0b087110331754d451cf
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -453,8 +453,8 @@ class ComposerStaticInit65e85f9f959c0b087110331754d451cf
         ),
         'Fruitcake\\Cors\\' => 
         array (
-            0 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
-            1 => __DIR__ . '/..' . '/fruitcake/laravel-cors/src',
+            0 => __DIR__ . '/..' . '/fruitcake/laravel-cors/src',
+            1 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
         ),
         'Faker\\' => 
         array (
@@ -526,6 +526,11 @@ class ComposerStaticInit65e85f9f959c0b087110331754d451cf
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\ControllerBarang' => __DIR__ . '/../..' . '/app/Http/Controllers/ControllerBarang.php',
+        'App\\Http\\Controllers\\ControllerPembelian' => __DIR__ . '/../..' . '/app/Http/Controllers/ControllerPembelian.php',
+        'App\\Http\\Controllers\\ControllerPenjualan' => __DIR__ . '/../..' . '/app/Http/Controllers/ControllerPenjualan.php',
+        'App\\Http\\Controllers\\ControllerSuplier' => __DIR__ . '/../..' . '/app/Http/Controllers/ControllerSuplier.php',
+        'App\\Http\\Controllers\\ControllerUser' => __DIR__ . '/../..' . '/app/Http/Controllers/ControllerUser.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -535,6 +540,10 @@ class ComposerStaticInit65e85f9f959c0b087110331754d451cf
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\ModelBarang' => __DIR__ . '/../..' . '/app/Models/ModelBarang.php',
+        'App\\Models\\ModelPembelian' => __DIR__ . '/../..' . '/app/Models/ModelPembelian.php',
+        'App\\Models\\ModelPenjualan' => __DIR__ . '/../..' . '/app/Models/ModelPenjualan.php',
+        'App\\Models\\ModelSuplier' => __DIR__ . '/../..' . '/app/Models/ModelSuplier.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',

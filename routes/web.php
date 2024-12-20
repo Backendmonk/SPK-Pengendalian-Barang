@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ControllerBarang;
+use App\Http\Controllers\ControllerPembelian;
 use App\Http\Controllers\ControllerSuplier;
 use App\Http\Controllers\ControllerUser;
 use Illuminate\Routing\Controllers\Middleware;
@@ -75,6 +76,22 @@ route::controller(ControllerSuplier::class)->middleware('auth')->group(function(
 
     
 
+});
+
+route::controller(ControllerPembelian::class)->middleware('auth')->group(function(){
+    //views
+            route::get('/DataPermbelianBarang','DataPermbelianBarang')->name('datapembelianbarang');
+            route::post('/inputPembelianView','inputPembelianView');
+            route::post('/DetailBarang','DetailBarang');
+    
+
+            //db
+
+            route::post('/InputPembelian','InputPembelian');
+
+
+          
+            
 });
 
 
