@@ -30,7 +30,7 @@ class ControllerUser extends Controller
             return redirect('/index');
           
         }else{
-            echo "todak";
+            return redirect()->route('login')->with('salah','');
         }
         
 

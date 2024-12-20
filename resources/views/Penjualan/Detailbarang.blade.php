@@ -11,7 +11,7 @@
     
     <center><h1>INPUT Pembelian</h1></center>
     <BR></BR>
-<form method="POST" action="/InputPembelian" >
+<form method="POST" action="/InputPenjualan" >
      @csrf
 
      <input type="text" hidden value ="{{ $databarang->id }}" name = "id">
@@ -30,8 +30,8 @@
 
 
       <div class="mb-3">
-        <label for="hargabeli" class="form-label">Harga Beli Barang</label>
-        <input type="text" readonly required name ="hargabeli" class="form-control" id="hargabeli" aria-describedby="emailHelp" value="{{  $databarang->harga_beli }}">
+        <label for="hargabeli" class="form-label">Harga Jual Barang</label>
+        <input type="text" readonly required name ="hargajual" class="form-control" id="hargabeli" aria-describedby="emailHelp" value="{{  $databarang->harga_jual }}">
        
         
       </div>
@@ -41,26 +41,16 @@
         <input type="text" required name = "qty" class="form-control" id="qtyawal" aria-describedby="emailHelp" readonly value="{{  $databarang->stok }}" readonly>
       </div>
 
-      <div class="mb-3">
-        <label for="suplier" class="form-label">Suplier</label>
-        <select name="suplier"  class="form-control" aria-label="Default select example">
-            <option selected value="">--Suplier--</option>
-
-            @foreach ($datasuplier as $data)
-                <option value="{{ $data->id }}">{{ $data->nama_suplier }}</option>
-            @endforeach
-            
-          </select>
-      </div>
+      
 
       <div class="mb-3">
-        <label for="qtytambah" class="form-label">Qty Tambah</label>
+        <label for="qtytambah" class="form-label">Qty Beli</label>
         <input type="number" name="qtytambah" class="form-control" id="qtytambah" 
                placeholder="Masukkan Qty Tambah" required>
     </div>
 
     <div class="mb-3">
-        <label for="totalharga" class="form-label">Total Harga</label>
+        <label for="totalharga" class="form-label">Harga Harus Dibayar</label>
         <input type="text" name="totalharga" class="form-control" id="totalharga" 
                placeholder="Total Harga" readonly>
     </div>

@@ -4,6 +4,7 @@
 	<title>Login V16</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="{{ asset('/') }}LoginAsset/images/icons/favicon.ico"/>
 <!--===============================================================================================-->
@@ -28,6 +29,19 @@
 <!--===============================================================================================-->
 </head>
 <body>
+
+	@if (session()->has('salah'))
+	<script>
+
+					Swal.fire({
+					title: "Kesalahan !",
+					text: "Username atau Password Salah",
+					icon: "error"
+					});
+	</script>
+
+	 
+	@endif
 	
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('{{ asset('/') }}LoginAsset/images/bg-01.jpg');">

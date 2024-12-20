@@ -47,7 +47,7 @@ class ControllerPembelian extends Controller
 
     public function InputPembelian(Request $reqData){
 
-        $id = $reqData->kodebarang;
+        $id = $reqData->id;
         $namabarang = $reqData->namabarang;
         $hargabeli = $reqData->hargabeli;
         $qtyawal = $reqData->qty;

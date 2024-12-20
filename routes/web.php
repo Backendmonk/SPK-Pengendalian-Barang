@@ -98,7 +98,14 @@ route::controller(ControllerPembelian::class)->middleware('auth')->group(functio
 
 route::controller(ControllerPenjualan::class)->middleware('auth')->group(function(){
 
-    route::get('/DataPenjualanBarang','DataPenjualanBarang');
+    route::get('/DataPenjualanBarang','DataPenjualanBarang')->name('datapenjualanbarang');
+
+    route::post('/inputPenjualanView','inputPenjualanView');
+    route::post('/DetailBarang','DetailBarang');
+    
+    //db
+
+    route::post('/InputPenjualan','InputPenjualan');
 });
 
 
