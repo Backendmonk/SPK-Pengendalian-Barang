@@ -70,11 +70,7 @@ class ControllerPenjualan extends Controller
                     $InputDoDbPenjualan->qty = $qtyjual;
                     $InputDoDbPenjualan->total_bayar = $total;
                     $InputDoDbPenjualan->save();
-                    
-                    
-                    
-    
-    
+                     
                     ///
     
     

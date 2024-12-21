@@ -54,6 +54,13 @@
 
     <!-- Nav Item - Pages Collapse Menu -->
     
+  <!-- Nav Item - Tables -->
+        <li class="nav-item">
+            <a class="nav-link" href="/kriteria">
+                <i class="fas fa-fw fa-book"></i>
+                <span>Kriteria</span></a>
+        </li>
+
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
@@ -68,6 +75,8 @@
             <i class="fas fa-fw fa-table"></i>
             <span>Tables</span></a>
     </li>
+
+    
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">

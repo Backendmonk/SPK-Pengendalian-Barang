@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ControllerBarang;
+use App\Http\Controllers\ControllerKriteria;
 use App\Http\Controllers\ControllerPembelian;
 use App\Http\Controllers\ControllerPenjualan;
 use App\Http\Controllers\ControllerSuplier;
@@ -106,6 +107,15 @@ route::controller(ControllerPenjualan::class)->middleware('auth')->group(functio
     //db
 
     route::post('/InputPenjualan','InputPenjualan');
+});
+
+
+
+route::controller(ControllerKriteria::class)->middleware('auth')->group(function(){
+
+    route::get('/kriteria','DataKriteria')->name('datakriteria');
+    route::post('/inputKriteriaView','inputKriteriaView');
+    
 });
 
 
