@@ -115,6 +115,9 @@ route::controller(ControllerKriteria::class)->middleware('auth')->group(function
 
     route::get('/kriteria','DataKriteria')->name('datakriteria');
     route::post('/inputKriteriaView','inputKriteriaView');
+
+    route::post('/KriteriaAdd','KriteriaAdd');
+
     
 });
 
