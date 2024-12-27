@@ -15,29 +15,31 @@
      @csrf
 
         <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Biaya Simpan</label>
+        <label for="exampleInputEmail1" class="form-label">Biaya Simpan (H)</label>
         <input type="number"     required name = "bsimpan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         
       </div>
 
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Biaya Pesan</label>
+        <label for="exampleInputEmail1" class="form-label">Biaya Pemesanan (S)</label>
         <input type="number" required name = "pesan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         
       </div>
 
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Waktu Tunggu</label>
+        <label for="exampleInputEmail1" class="form-label">Waktu Tunggu / 30 hari</label>
         <input type="number" required name = "waktu" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         
       </div>
 
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Kebutuhan Pengamanan</label>
+        <label for="exampleInputEmail1" class="form-label">Kebutuhan Pengamanan (%)</label>
         <input type="number" required name = "pengamanan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         
       </div>
 
+
+      
 
     
     <button type="submit" class="btn btn-primary">Submit</button>

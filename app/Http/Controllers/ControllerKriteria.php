@@ -37,4 +37,29 @@ class ControllerKriteria extends Controller
     }
 
 
+    public function KriteriaAdd(Request $reqkriteriadata){
+
+
+        $biayasimpan = $reqkriteriadata->bsimpan;
+        $biayapesan = $reqkriteriadata->pesan;
+        $waktu = $reqkriteriadata->waktu;
+        $pengamanan = $reqkriteriadata->pengamanan;
+
+        try {
+            //code...
+
+
+            $inputToTBKriteria  = new ModelKriteria;
+
+                    $inputToTBKriteria->biaya_simpan = $biayasimpan;
+                    $inputToTBKriteria->biaya_pesan = $biayapesan;
+                    $inputToTBKriteria->waktu_tunggu =$waktu;
+                    
+        } catch (\Throwable $th) {
+            //throw $th;
+        }
+
+    }
+
+
 }
