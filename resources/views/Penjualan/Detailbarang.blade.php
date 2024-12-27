@@ -54,6 +54,14 @@
         <input type="text" name="totalharga" class="form-control" id="totalharga" 
                placeholder="Total Harga" readonly>
     </div>
+    @php
+        $date = date('Y-m-d');
+    @endphp
+    <div class="mb-3">
+      <label for="tanggal" class="form-label">Tanggal</label>
+      <input type="date" name="tanggal" class="form-control" id="tanggal Penjualan" 
+             placeholder="Tanggal" value ="{{ $date }}">
+  </div>
 
 
     <!-- js -->

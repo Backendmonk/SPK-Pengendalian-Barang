@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::table('tb_penjualan', function (Blueprint $table) {
             //
-            $table = date('tanggal');
+            $table->date('tanggal')->nullable();
         });
     }
 

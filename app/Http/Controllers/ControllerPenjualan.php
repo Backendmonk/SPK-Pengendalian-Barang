@@ -53,6 +53,7 @@ class ControllerPenjualan extends Controller
         $qtyjual = $reqData->qtytambah;
         $total = $hargajual*$qtyjual;
         $qtyAkhir = $qtyawal - $qtyjual;
+        $tanggal = $reqData->tanggal;
 
 
             if ($qtyawal< $qtyjual ) {
@@ -69,6 +70,7 @@ class ControllerPenjualan extends Controller
                     $InputDoDbPenjualan->harga_barang = $hargajual;
                     $InputDoDbPenjualan->qty = $qtyjual;
                     $InputDoDbPenjualan->total_bayar = $total;
+                    $InputDoDbPenjualan->tanggal = $tanggal;
                     $InputDoDbPenjualan->save();
                      
                     ///
