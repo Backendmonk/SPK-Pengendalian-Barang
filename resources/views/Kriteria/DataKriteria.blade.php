@@ -96,7 +96,7 @@
                         <th>Biaya Pesan</th>
                         <th>Waktu Tunggu</th>
                         <th>Kebutuhan Pengaman</th>
-                        {{-- <th colspan="2">Tools</th> --}}
+                        <th colspan="2">Tools</th>
                         
                     </tr>
                 </thead>
@@ -108,7 +108,7 @@
 
                     @foreach ($datakriteria as $data)
                     <tr>
-                            <td>{{ $data->id }}</td>
+                       
                             <td>{{ $data->biaya_simpan}}</td>
                             <td>{{ $data->biaya_pesan}}</td>
                             <td>{{ $data->waktu_tunggu}}</td>

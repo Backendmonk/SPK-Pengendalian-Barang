@@ -43,6 +43,7 @@ class ControllerKriteria extends Controller
         $biayasimpan = $reqkriteriadata->bsimpan;
         $biayapesan = $reqkriteriadata->pesan;
         $waktu = $reqkriteriadata->waktu;
+        $waktutunggu = $waktu/30;
         $pengamanan = $reqkriteriadata->pengamanan;
 
         try {
@@ -53,10 +54,18 @@ class ControllerKriteria extends Controller
 
                     $inputToTBKriteria->biaya_simpan = $biayasimpan;
                     $inputToTBKriteria->biaya_pesan = $biayapesan;
-                    $inputToTBKriteria->waktu_tunggu =$waktu;
+                    $inputToTBKriteria->waktu_tunggu =$waktutunggu;
+                     $inputToTBKriteria->kebutuhan_pengaman = $pengamanan;
+                
+                     $inputToTBKriteria->save();
+
+                     return redirect()->route('datakriteria')->with('pesanbenar','');
+
                     
         } catch (\Throwable $th) {
             //throw $th;
+            return redirect()->route('datakriteria')->with('error','');
+
         }
 
     }
