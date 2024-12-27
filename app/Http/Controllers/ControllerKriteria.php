@@ -71,4 +71,17 @@ class ControllerKriteria extends Controller
     }
 
 
+    public function hapuskriteria(Request $reqid){
+
+        $id = $reqid->id;
+
+        $fidID = ModelKriteria::find($id);
+
+        $fidID->delete();
+        return redirect()->route('datakriteria')->with('pesanbenar','');
+
+
+    }
+
+
 }

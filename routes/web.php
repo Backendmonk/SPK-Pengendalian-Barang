@@ -117,6 +117,7 @@ route::controller(ControllerKriteria::class)->middleware('auth')->group(function
     route::post('/inputKriteriaView','inputKriteriaView');
 
     route::post('/KriteriaAdd','KriteriaAdd');
+    route::post('/hapusKriteria','hapuskriteria');
 
     
 });
