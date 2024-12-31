@@ -32,47 +32,17 @@
     });
 </script>
 @endif
-    <center><h1>Pilih Rentang Waktu</h1></center>
+    <center><h1>Pilih Rentang Waktu Data Penjualan</h1></center>
     <br>
     <form action="">
 <div class="row">
     
     <div class="col">
-        <select class="form-control" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">JANUARI</option>
-            <option value="2">FEBRUARI</option>
-            <option value="3">MARET</option>
-            <option value="4">APRIL</option>
-            <option value="5">MEI</option>
-            <option value="6">JUNI</option>
-            <option value="7">JULI</option>
-            <option value="8">AGUSTUS</option>
-            <option value="9">SEPTEMBER</option>
-            <option value="10">OKTOBER</option>
-            <option value="11">NOVEMBER</option>
-            <option value="12">DESEMBER</option>
-  
-          </select>
+        <input type="date" class = "form-control" name = "hari1">
     </div>
     Sampai
     <div class="col">
-        <select class="form-control" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">JANUARI</option>
-            <option value="2">FEBRUARI</option>
-            <option value="3">MARET</option>
-            <option value="4">APRIL</option>
-            <option value="5">MEI</option>
-            <option value="6">JUNI</option>
-            <option value="7">JULI</option>
-            <option value="8">AGUSTUS</option>
-            <option value="9">SEPTEMBER</option>
-            <option value="10">OKTOBER</option>
-            <option value="11">NOVEMBER</option>
-            <option value="12">DESEMBER</option>
-  
-          </select>
+        <input type="date" class = "form-control" name = "hari2">
     </div>
   </div>
   <br>
