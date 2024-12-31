@@ -78,7 +78,7 @@ class ControllerPenjualan extends Controller
     
                     $updateBarang = ModelBarang::find($id);
     
-                    $updateBarang->stok=$qtyAkhir;
+                    $updateBarang->stok=$qtyAkhir;  
                       $updateBarang->save();
                    
                    

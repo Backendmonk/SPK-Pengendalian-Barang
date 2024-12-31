@@ -6,6 +6,7 @@ use App\Http\Controllers\ControllerPembelian;
 use App\Http\Controllers\ControllerPenjualan;
 use App\Http\Controllers\ControllerSuplier;
 use App\Http\Controllers\ControllerUser;
+use App\Http\Controllers\EoqController;
 use Illuminate\Routing\Controllers\Middleware;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -120,6 +121,12 @@ route::controller(ControllerKriteria::class)->middleware('auth')->group(function
     route::post('/hapusKriteria','hapuskriteria');
 
     
+});
+
+route::controller(EoqController::class)->middleware('auth')->group(function(){
+
+
+    route::get('/analisisEOQ','AnalisisEOQ');
 });
 
 
