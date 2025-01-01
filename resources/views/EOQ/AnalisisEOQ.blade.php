@@ -22,19 +22,32 @@
 
 
 
-@if (session()->has('PesanAdaBarang'))
+@if (session()->has('ErrorBesar'))
 <script>
 
     Swal.fire({
-    title: "barang Ada!",
-    text: "Barang tersebut Sudah Terinput",
+    title: "Error",
+    text: "Waktu ke dua Tidak Boleh Lebih Kecil",
+    icon: "warning"
+    });
+</script>
+@endif
+
+
+@if (session()->has('ErrorKosong'))
+<script>
+
+    Swal.fire({
+    title: "Error!",
+    text: "Salah Satu Waktu Kosong",
     icon: "warning"
     });
 </script>
 @endif
     <center><h1>Pilih Rentang Waktu Data Penjualan</h1></center>
     <br>
-    <form action="">
+    <form action="/analisis" method="post">
+        @csrf
 <div class="row">
     
     <div class="col">

@@ -46,6 +46,10 @@
 
     <!-- Page level custom scripts -->
     <script src="{{ asset('/') }}AdminAsset/js/demo/datatables-demo.js"></script>
+    <!-- Buttons Extension JS -->
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.print.min.js"></script>
+
 
 </body>
 

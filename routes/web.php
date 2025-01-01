@@ -126,7 +126,9 @@ route::controller(ControllerKriteria::class)->middleware('auth')->group(function
 route::controller(EoqController::class)->middleware('auth')->group(function(){
 
 
-    route::get('/analisisEOQ','AnalisisEOQ');
+    route::get('/analisisEOQ','AnalisisEOQ')->name('AnalisisE');
+
+    route::post('/analisis','analisis');
 });
 
 
