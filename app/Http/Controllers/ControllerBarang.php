@@ -3,8 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\ModelBarang;
+use App\Models\ModelPembelian;
+use App\Models\ModelPenjualan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use PhpParser\Node\Expr\Cast;
 
 class ControllerBarang extends Controller
 {
@@ -16,7 +20,22 @@ class ControllerBarang extends Controller
         # code...
         return redirect('/');
       }else{
-        return view('Barang.Dashboard');
+
+        $Arraypenjualan = [
+            'DataPenjualan'=>ModelPenjualan::select('*')
+            ->orderByRaw('CAST(total_bayar AS UNSIGNED)DESC')
+            ->limit(5)
+            ->get(),
+
+
+            'barangdijualtotal'=>ModelPenjualan::count('id'),
+            'barangdibelitotal'=>ModelPembelian::count('id'),
+
+            'pendapatan'=>ModelPenjualan::select(DB::raw('SUM(total_bayar)AS total'))->first(),
+            'pengeluaran'=>ModelPembelian::select(DB::raw('SUM(total)AS total'))->first(),
+            
+        ];
+        return view('Barang.Dashboard',$Arraypenjualan);
       }   
     }
 

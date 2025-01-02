@@ -36,7 +36,6 @@ class EoqController extends Controller
         
             $arrayTOTable  = [
                 //dipakai jika ingin menggunakan sintax seperti SELECT(nama,id,dll) SUM(id) WHERE
-                
                 'callTbPenjualan'=>ModelPenjualan::whereBetween('tanggal',[$dayfirst,$daysec])
                 ->select('id_barang','nama_barang','harga_barang',DB::raw('SUM(qty) as totalqty'))
                 ->groupby('id_barang','nama_barang','harga_barang')
