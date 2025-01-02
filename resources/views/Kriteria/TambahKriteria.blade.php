@@ -1,7 +1,7 @@
 @extends('Template.main')
 
 @section('judul')
-    Input Suplier
+    Input Kriteria
 @endsection
 
 

@@ -1,7 +1,7 @@
 @extends('Template.main')
 
 @section('judul')
-    Dashboard
+    Data Barang
 @endsection
 
 
